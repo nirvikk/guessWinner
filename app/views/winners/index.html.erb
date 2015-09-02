@@ -1,0 +1,8 @@
+<ul>
+	<% @winners.each do |winner| %>
+	<li><%= winner.name %> <%= winner.vote %></li>
+	<% end %>
+
+</ul>
+
+<h1>The Winner is <%= @current_winner.name %>. He won by <%= @win_number %> votes.</h1>
